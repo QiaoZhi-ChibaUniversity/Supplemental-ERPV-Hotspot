@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jan 17 07:15:15 2025
+Main script for fitting BRDF models to directional reflectance data.
 
-@author: 28906
+This script reads observation data (angles + reflectance) from a CSV file,
+fits multiple BRDF models to both RED and NIR bands, and prints the results.
+
+
+@author: QIAO ZHI
 """
 
 
@@ -81,8 +85,8 @@ def Maignan2004_func(xdata, ydata):
     y_fit = model.predict(X)
     return model, y_fit
 
-# Define file path
-file_path = r'F:/data\1422_n\(0, 0)_AUC_EBF_2018_0329.csv'
+# === Set input CSV file path ===
+file_path = r'sample/sample.csv'
 
 # Read data
 data_df = pd.read_csv(file_path)
@@ -93,8 +97,8 @@ Solar_zenith = np.array(data_df['SOZ'])
 View_zenith = np.array(data_df['SAZ'])
 Solar_azimuth = np.array(data_df['SOA'])
 View_azimuth = np.array(data_df['SAA'])
-B3 = np.array(data_df['B3'])
-B4 = np.array(data_df['B4'])
+RED = np.array(data_df['RED'])   
+NIR = np.array(data_df['NIR']) 
 
 # Filter data
 
@@ -108,7 +112,7 @@ models = {
     'Jiao2016': Jiao2016_func,
     'Maignan2004': Maignan2004_func
 }
-bands = {'B3': B3, 'B4': B4}
+bands = {'RED': RED, 'NIR': NIR}
 
 # Fit models
 fitting_results = {}
@@ -117,7 +121,8 @@ for band_name, ydata in bands.items():
     for model_name, model_func in models.items():
         try:
             if model_name in ['Improved_RPV', 'Original_RPV', 'Jiao2016']:
-                popt, _ = curve_fit(model_func, xdata, ydata, maxfev=10000)
+                # Nonlinear curve fitting
+                popt, _ = curve_fit(model_func, xdata, ydata, maxfev=5000)
                 y_fit = model_func(xdata, *popt)
                 r2 = r2_score(ydata, y_fit)
                 bias = np.mean(y_fit - ydata)
@@ -127,6 +132,7 @@ for band_name, ydata in bands.items():
                 print(f"R²: {r2:.4f}, BIAS: {bias:.4f}, RMSE: {rmse:.4f}")
                 print(f"Fitted Parameters: {popt}")
             elif model_name in ['RTLSR', 'Maignan2004']:
+                # Linear fitting for RTLSR and Maignan2004
                 model, y_fit = model_func(xdata, ydata)
                 r2 = r2_score(ydata, y_fit)
                 bias = np.mean(y_fit - ydata)
