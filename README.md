@@ -60,6 +60,7 @@ Other commonly used BRDF models: Original RPV, RTLSR, Jiao2016, and Maignan2004.
 📚 Citation Notice
 
 If you use the ERPV model or the dataset in this repository, please cite our paper:
+
 Yang Wei, Qiao Zhi, Li Wei, Ma Xuanlong, and Ichii Kazuhito. (2025).
 An Enhanced RPV Model to Better Capture Hotspot Signatures in Vegetation Canopy Reflectance Observed by the Geostationary Meteorological Satellite Himawari-8.
 Science of Remote Sensing.
