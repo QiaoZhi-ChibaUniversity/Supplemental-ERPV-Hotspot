@@ -39,8 +39,8 @@ Each `.csv` file corresponds to a specific location and observation period. The 
 | `JIAO2016_NIR_FIT`  | Fitted NIR reflectance using **Jiao2016 model** |
 | `RTLSR_RED_FIT`     | Fitted RED reflectance using **RTLSR model** |
 | `RTLSR_NIR_FIT`     | Fitted NIR reflectance using **RTLSR model** |
-| `MAIGNAN2004_RED_FIT` | Fitted RED reflectance using **Maignan2004 model)** |
-| `MAIGNAN2004_NIR_FIT` | Fitted NIR reflectance using **Maignan2004 model)** |
+| `MAIGNAN2004_RED_FIT` | Fitted RED reflectance using **Maignan2004 model** |
+| `MAIGNAN2004_NIR_FIT` | Fitted NIR reflectance using **Maignan2004 model** |
 | `NDVI`              | Normalized Difference Vegetation Index computed as (NIR - RED) / (NIR + RED) |
 
 ---
