@@ -20,8 +20,8 @@ import Func_LSR_Kgeo
 import Func_RossThick_Kvol
 import Func_Maignan2004_Kvol
 
-# Define Improved RPV model
-def Improved_RPV_func(xdata, rho, kei, theta, C1, C2):
+# Define Enhanced RPV model
+def Enhanced_RPV_func(xdata, rho, kei, theta, C1, C2):
     sza, vza, saa, vaa = np.radians(xdata[:, 0]), np.radians(xdata[:, 1]), np.radians(xdata[:, 2]), np.radians(xdata[:, 3])
     raa = vaa - saa
     G = np.sqrt((np.tan(sza))**2 + (np.tan(vza))**2 - 2 * np.tan(sza) * np.tan(vza) * np.cos(raa))
@@ -106,7 +106,7 @@ xdata = np.column_stack((Solar_zenith, View_zenith, Solar_azimuth, View_azimuth)
 
 # Models and bands
 models = {
-    'Improved_RPV': Improved_RPV_func,
+    'Enhanced_RPV': Enhanced_RPV_func,
     'Original_RPV': Original_RPV_func,
     'RTLSR': RTLSR_func,
     'Jiao2016': Jiao2016_func,
@@ -120,7 +120,7 @@ for band_name, ydata in bands.items():
     fitting_results[band_name] = {}
     for model_name, model_func in models.items():
         try:
-            if model_name in ['Improved_RPV', 'Original_RPV', 'Jiao2016']:
+            if model_name in ['Enhanced_RPV', 'Original_RPV', 'Jiao2016']:
                 # Nonlinear curve fitting
                 popt, _ = curve_fit(model_func, xdata, ydata, maxfev=5000)
                 y_fit = model_func(xdata, *popt)
