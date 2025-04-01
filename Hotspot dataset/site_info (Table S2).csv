@@ -1,0 +1,47 @@
+Site Name,Latitude,Longitude,Land Cover Type,Full name,
+AUC,-32.5983,116.2542,EBF,AustraliaCamerons,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+AUG,-31.5338,115.8824,EBF,AustraliaGnangara,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CBS,42.4025,128.095833,MF,Changbaishan Site,Asiaflux
+CAW1,33.151,116.772,Crop,ChinaAHwheat1,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CAW3,33.116,116.804,Crop,ChinaAHwheat3,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CAW5,33.1,116.865,Crop,ChinaAHwheat5,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CBW1,40.2273,116.8109,Crop,ChinaBJwheat1,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CBW2,40.1718,116.5722,Crop,ChinaBJwheat2,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CBW3,40.2046,116.3577,Crop,ChinaBJwheat3,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CBW8,40.1729,116.581,Crop,ChinaBJwheat8,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHailunA,47.41,126.838,Crop,ChinaHailunA,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHailunB,47.405,126.838,Crop,ChinaHailunB,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHailunC,47.401,126.805,Crop,ChinaHailunC,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHailunD,47.409,126.798,Crop,ChinaHailunD,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHailunE,47.429,126.801,Crop,ChinaHailunE,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+ChinaHLJbarley1,46.8021,131.8055,Crop,ChinaHLJbarley1,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CHA,47.667,133.515,Crop,ChinaHongheA,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CHB,47.663,133.532,Crop,ChinaHongheB,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CHC,47.653,133.523,Crop,ChinaHongheC,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CHD,47.637,133.515,Crop,ChinaHongheD,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CHE,47.637,133.534,Crop,ChinaHongheE,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+CZB,41.2788,114.6878,Grass,ChinaZhangBei,DIRECT V2.1(https://calvalportal.ceos.org/lpv-direct-v2.1)
+DGT,46.2489,106.4953,Grass,Delgertsogt,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+FHK,35.4436,138.7658,DNF,Fujihokuroku,Asiaflux
+FJY,35.4546,138.7623,DNF,Fujiyoshida,Asiaflux
+IRIFL,14.14103,121.265264,Crop,IRRI Flux Research Site-flooded,European Fluxes
+IRINFL,14.144223,121.262686,Crop,IRRI Flux Research Site-not-flooded,European Fluxes
+KBU,47.213972,108.737333,Grass,Kherlenbayan Ulaan,Asiaflux
+KEW,34.963611,135.994444,ENF,Kiryu Experiment Watershed,Asiaflux
+KYM,47.6705,112.0764,Grass,Khar yamaat,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+LSH,45.279839,127.578206,DNF,Laoshan,Asiaflux
+MBN,47.7981,108.331,Grass,Baganuur,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+MKL,14.589564,98.84388,MF,Mae Klong,Asiaflux
+MSE,36.069082,140.022697,Crop,Mase paddy flux site,Asiaflux
+QYZ,26.7415,115.0748,EBF,Qianyanzhou Site,Asiaflux
+SKR,14.492361,101.916306,EBF, Sakaerat,Asiaflux
+SKT,48.351861,108.654333,DNF,Southern Khentei Taiga,Asiaflux
+SMF,35.261663,137.07875,MF,Seto Mixed Forest Site,Asiaflux
+SMK,37.93889,126.95471,MF,KoFlux Seolmacheon site,Asiaflux
+TKC,36.139722,137.370833,DNF,Takayama evergreen coniferous forest site,Asiaflux
+TKY,36.146167,137.423111,DBF, Takayama deciduous broadleaf forest site,Asiaflux
+TMK,42.734657,141.518326,DNF,Tomakomai Flux Research Site,Asiaflux
+TMM,43.5614,143.1557,MF,TokachiMitsumata,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+TOS,42.7082,141.5553,DBF,Tomakomai,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+WTR,36.2658,139.6831,Grass,Watarase,jaxa super site(https://www.sciencedirect.com/science/article/pii/S0303243421003469)
+YCS,36.95,116.6,Crop,Yuchen Site,Asiaflux
