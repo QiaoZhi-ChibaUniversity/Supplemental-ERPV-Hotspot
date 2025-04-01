@@ -111,9 +111,11 @@ Results are stored in a dictionary named fitting_results.
 You may extend the code to export fitted values or plots.
 
 📜 License
+
 This project is released under the MIT license. See the LICENSE file for details.
 
 🙌 Acknowledgements
+
 Created by Qiao Zhi.
 If you have any questions, feedback, or suggestions, feel free to open an Issue on this repository.
 We appreciate your interest and welcome any contributions that support open and reproducible research!
