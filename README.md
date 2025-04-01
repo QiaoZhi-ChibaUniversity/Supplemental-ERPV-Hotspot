@@ -24,8 +24,8 @@ Each `.csv` file corresponds to a specific location and observation period. The 
 | Column Name         | Description |
 |---------------------|-------------|
 | `TIME`              | Observation timestamp (Local) |
-| `RED`               | Red band reflectance|
-| `NIR`               | Near-infrared band reflectance |
+| `RED`               | Red band BRF of Himawari|
+| `NIR`               | Near-infrared band BRF of Himawari|
 | `SAZ`               | Satellite zenith angle in degrees |
 | `SOZ`               | Solar zenith angle in degrees |
 | `SAA`               | Satellite azimuth angle in degrees |
@@ -82,7 +82,7 @@ where:
 
 SOZ, SAZ, SOA, and SAA represent solar/satellite zenith and azimuth angles.
 
-RED and NIR represent red and near-infrared reflectance.
+RED and NIR represent red and near-infrared BRFs of Himawari.
 
 2. Place the model scripts
 Ensure the following custom Python modules are placed in the same directory as the main script:
